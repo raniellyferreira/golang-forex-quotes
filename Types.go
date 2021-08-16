@@ -21,7 +21,7 @@ type Quote struct {
 	Bid    float32 `json:"b"`
 	Ask    float32 `json:"a"`
 	Price  float32 `json:"p"`
-	Time   int     `json:"t"`
+	Time   int64   `json:"t"`
 }
 
 type SocketClient struct {
@@ -43,7 +43,7 @@ type ForgeClient struct {
 type ConversionResult struct {
 	Value     float32
 	Text      string
-	Timestamp int
+	Timestamp int64
 }
 
 type Quota struct {
